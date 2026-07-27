@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90" role="img" aria-label="Don Dental Clinic Logo">
+  <defs>
+    <linearGradient id="donGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#CC2229;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1E6FB5;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="swooshGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#CC2229;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1E6FB5;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- DON text -->
+  <text x="4" y="52" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="54" fill="url(#donGrad)" letter-spacing="1">DON</text>
+
+  <!-- Blue underline swoosh beneath DON -->
+  <path d="M4 58 Q80 68 162 56" stroke="#1E6FB5" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+
+  <!-- DENTAL CLINIC text -->
+  <text x="6" y="76" font-family="Arial, sans-serif" font-weight="700" font-size="13.5" fill="#000000" letter-spacing="3.5">DENTAL CLINIC</text>
+
+  <!-- Tooth shape on the right -->
+  <g transform="translate(222, 8)">
+    <!-- Tooth body -->
+    <path d="M30 2
+             C18 2, 8 10, 8 22
+             C8 30, 10 36, 12 44
+             C14 54, 16 62, 20 68
+             C22 72, 24 74, 26 74
+             C28 74, 30 72, 30 68
+             C30 64, 30 58, 30 54
+             C30 50, 30 50, 30 54
+             C30 58, 30 64, 30 68
+             C30 72, 32 74, 34 74
+             C36 74, 38 72, 40 68
+             C44 62, 46 54, 48 44
+             C50 36, 52 30, 52 22
+             C52 10, 42 2, 30 2 Z"
+          fill="white" stroke="#cccccc" stroke-width="1.5"/>
+
+    <!-- Red swoosh arc on tooth -->
+    <path d="M14 18 Q22 8 38 14" stroke="#CC2229" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+    <!-- Blue swoosh arc on tooth -->
+    <path d="M12 30 Q30 20 48 28" stroke="#1E6FB5" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+    <!-- Small root bumps at bottom -->
+    <path d="M22 70 Q18 80 20 85" stroke="#aaaaaa" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M38 70 Q42 80 40 85" stroke="#aaaaaa" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>
