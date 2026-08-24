@@ -475,11 +475,11 @@ button {
 }
 
 /* ============================================================
-   HERO SECTION — Smiling Background, Serif Headline & Floating Artifacts
+   HERO SECTION — High-Visibility Background & Floating Artifacts
    ============================================================ */
 .hero-section {
   position: relative;
-  background: var(--surface-canvas);
+  background: transparent;
   padding: var(--spacing-96) var(--spacing-24) var(--spacing-96);
   overflow: hidden;
   min-height: calc(100vh - var(--header-h));
@@ -488,7 +488,7 @@ button {
   justify-content: center;
 }
 
-/* Smiling Person Background Layer */
+/* Background Photo Layer */
 .hero-bg-layer {
   position: absolute;
   inset: 0;
@@ -503,16 +503,15 @@ button {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 25%;
-  opacity: 0.32;
-  filter: saturate(1.08) contrast(1.02);
-  transform: scale(1.02);
+  object-position: center 20%;
+  opacity: 0.92;
+  filter: saturate(1.05) contrast(1.02);
 }
 
 .hero-bg-overlay {
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 50% 30%, rgba(255, 255, 255, 0.82) 0%, rgba(255, 255, 255, 0.94) 65%, #ffffff 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.45) 100%);
   z-index: 2;
   pointer-events: none;
 }
@@ -531,6 +530,19 @@ button {
   text-align: center;
   position: relative;
   z-index: 5;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: var(--radius-cards);
+  border: 1px solid rgba(255, 255, 255, 0.95);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(23, 25, 28, 0.06);
+  padding: 44px 36px;
+}
+
+@media (max-width: 640px) {
+  .hero-content {
+    padding: 32px 20px;
+  }
 }
 
 .hero-tag {

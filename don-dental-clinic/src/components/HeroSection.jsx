@@ -1,6 +1,16 @@
 function HeroSection({ t, onNavigate }) {
   return (
     <section id="hero" className="hero-section" aria-labelledby="hero-heading" data-aos="fade-up">
+      {/* Doctor Consultation Background Layer */}
+      <div className="hero-bg-layer" aria-hidden="true">
+        <img
+          src="/assets/doctor-consultation.jpg"
+          alt="Dr. Don Dental Specialist consulting with patient in Addis Ababa"
+          loading="eager"
+        />
+        <div className="hero-bg-overlay" />
+      </div>
+
       <div className="hero-container">
         <div className="hero-content">
           <span className="hero-tag">Addis Ababa, Ethiopia · Est. 2024</span>
@@ -27,39 +37,6 @@ function HeroSection({ t, onNavigate }) {
               <span>→</span>
             </button>
           </div>
-
-          {/* AI / Specialist Consultation Composer */}
-          <div className="hero-composer-wrapper">
-            <div className="composer-card">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#777b86" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" width="18" height="18" aria-hidden="true">
-                <circle cx="12" cy="12" r="10" /><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" /><line x1="12" y1="17" x2="12.01" y2="17" />
-              </svg>
-              <input
-                type="text"
-                className="composer-input"
-                placeholder="Ask about teeth whitening, veneers, or appointments..."
-                aria-label="Ask a question about our dental treatments"
-              />
-              <button
-                className="composer-send-btn"
-                aria-label="Send inquiry"
-                onClick={() => onNavigate('contact')}
-              >
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                  <line x1="22" y1="2" x2="11" y2="13" /><polygon points="22 2 15 22 11 13 2 9 22 2" />
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        {/* Hero Visual Collage: Photography */}
-        <div className="hero-visual-collage" data-aos="fade-up" data-aos-delay="60">
-          <img
-            src="/assets/doctor-consultation.jpg"
-            alt="Dr. Don Dental Specialist consulting with patient in Addis Ababa"
-            loading="eager"
-          />
         </div>
 
         {/* Floating Product UI Artifacts around Hero */}
