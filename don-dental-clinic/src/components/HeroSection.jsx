@@ -1,22 +1,96 @@
 function HeroSection({ t, onNavigate }) {
   return (
     <section id="hero" className="hero-section" aria-labelledby="hero-heading" data-aos="fade-up">
-      <div className="hero-inner">
-        <div className="hero-badge" aria-hidden="true">
-          <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 1a7 7 0 100 14A7 7 0 008 1zM7 5h2v5H7V5zm0 6h2v2H7v-2z" /></svg>
-          Addis Ababa, Ethiopia
+      <div className="hero-container">
+        <div className="hero-content">
+          <span className="hero-tag">Addis Ababa, Ethiopia · Est. 2024</span>
+
+          <h1 id="hero-heading" className="hero-title">
+            <span className="word-don">{t('hero_clinic_name')}</span>
+            <span className="italic-accent">{t('hero_subheadline')}</span>
+          </h1>
+
+          <p className="hero-tagline">{t('hero_tagline')}</p>
+
+          <div className="hero-actions">
+            <button
+              className="btn-pill-filled"
+              onClick={() => onNavigate('contact')}
+            >
+              <span>{t('hero_cta')}</span>
+            </button>
+            <button
+              className="btn-pill-ghost"
+              onClick={() => onNavigate('services')}
+            >
+              <span>{t('nav_services')}</span>
+              <span>→</span>
+            </button>
+          </div>
+
+          {/* AI / Specialist Consultation Composer */}
+          <div className="hero-composer-wrapper">
+            <div className="composer-card">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#777b86" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" width="18" height="18" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" /><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" /><line x1="12" y1="17" x2="12.01" y2="17" />
+              </svg>
+              <input
+                type="text"
+                className="composer-input"
+                placeholder="Ask about teeth whitening, veneers, or appointments..."
+                aria-label="Ask a question about our dental treatments"
+              />
+              <button
+                className="composer-send-btn"
+                aria-label="Send inquiry"
+                onClick={() => onNavigate('contact')}
+              >
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13" /><polygon points="22 2 15 22 11 13 2 9 22 2" />
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
-        <h1 id="hero-heading" className="hero-title">
-          <span className="word-don">{t('hero_clinic_name')}</span>
-        </h1>
-        <p className="hero-subtitle">{t('hero_subheadline')}</p>
-        <p className="hero-tagline">{t('hero_tagline')}</p>
-        <a href="#contact" className="btn-hero" role="button" onClick={(e) => { e.preventDefault(); onNavigate('contact'); }}>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" /><line x1="16" y1="2" x2="16" y2="6" /><line x1="8" y1="2" x2="8" y2="6" /><line x1="3" y1="10" x2="21" y2="10" />
-          </svg>
-          <span>{t('hero_cta')}</span>
-        </a>
+
+        {/* Hero Visual Collage: Photography */}
+        <div className="hero-visual-collage" data-aos="fade-up" data-aos-delay="60">
+          <img
+            src="/assets/doctor-consultation.jpg"
+            alt="Dr. Don Dental Specialist consulting with patient in Addis Ababa"
+            loading="eager"
+          />
+        </div>
+
+        {/* Floating Product UI Artifacts around Hero */}
+        <div className="hero-artifacts-grid" data-aos="fade-up" data-aos-delay="100">
+          <div className="floating-artifact">
+            <div className="artifact-header">
+              <span className="artifact-badge"><span className="live-dot" /> Accepting Patients</span>
+              <span className="card-top-tag">Mon–Sat</span>
+            </div>
+            <div className="artifact-metric">8:00 AM – 6:00 PM</div>
+            <p className="artifact-desc">Convenient central location in Addis Ababa</p>
+          </div>
+
+          <div className="floating-artifact">
+            <div className="artifact-header">
+              <span className="artifact-badge">Google Verified</span>
+              <div className="avatar-bubble" title="Dr. Don Lead Surgeon">DD</div>
+            </div>
+            <div className="artifact-metric">4.9 ★★★★★</div>
+            <p className="artifact-desc">Over 500+ satisfied smiling patients</p>
+          </div>
+
+          <div className="floating-artifact">
+            <div className="artifact-header">
+              <span className="artifact-badge">Technology</span>
+              <span className="card-top-tag">100% Digital</span>
+            </div>
+            <div className="artifact-metric">Anxiety-Free</div>
+            <p className="artifact-desc">Gentle ultrasonic care & sterile suites</p>
+          </div>
+        </div>
       </div>
     </section>
   );

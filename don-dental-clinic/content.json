@@ -7,12 +7,12 @@
   "lang_toggle_en": { "en": "EN", "am": "EN" },
   "lang_toggle_am": { "en": "አማ", "am": "አማ" },
 
-  "hero_clinic_name": { "en": "Don Dental Clinic", "am": "ዶን ዯንታል ክሊኒክ" },
+  "hero_clinic_name": { "en": "Don Dental Clinic", "am": "ዶን ዴንታል ክሊኒክ" },
   "hero_subheadline": { "en": "Advanced dental care in the heart of Addis Ababa", "am": "በአዲስ አበባ ማዕከል ዘመናዊ የጥርስ ሕክምና" },
   "hero_tagline": { "en": "Your smile is our passion — trusted, gentle, and modern.", "am": "ፈገግታዎ ፍቅራችን ነው — አስተማማኝ፣ ቀልጠፋ እና ዘመናዊ።" },
   "hero_cta": { "en": "Book Appointment", "am": "ቀጠሮ ይያዙ" },
 
-  "value_heading": { "en": "Why Choose Don Dental?", "am": "ዶን ዯንታልን ለምን ይምረጡ?" },
+  "value_heading": { "en": "Why Choose Don Dental?", "am": "ዶን ዴንታልን ለምን ይምረጡ?" },
   "value1_title": { "en": "Expert Care", "am": "ልዩ እንክብካቤ" },
   "value1_desc": { "en": "Our experienced dental team delivers professional care tailored to each patient's needs.", "am": "ልምድ ያለው የጥርስ ሕክምና ቡድናችን ለእያንዳንዱ ታካሚ ፍላጎት ተስማሚ የሆነ ሙያዊ እንክብካቤ ይሰጣል።" },
   "value2_title": { "en": "Modern Equipment", "am": "ዘመናዊ መሳሪያ" },
@@ -23,7 +23,7 @@
   "services_heading": { "en": "Our Services", "am": "አገልግሎቶቻችን" },
   "service1_title": { "en": "General Dentistry", "am": "አጠቃላይ የጥርስ ሕክምና" },
   "service1_desc": { "en": "Routine check-ups, fillings, extractions, and preventive care to keep your teeth healthy.", "am": "ጥርስዎን ጤናማ ለማቆየት መደበኛ ምርመራዎች፣ ሙሌቶች፣ ቀዶ ሕክምና እና የጥንቃቄ እንክብካቤ።" },
-  "service2_title": { "en": "Cosmetic Dentistry", "am": "የጌጣጌጥ የጥርስ ሕክምና" },
+  "service2_title": { "en": "Cosmetic Dentistry", "am": "የጥርስ ውበት ሕክምና" },
   "service2_desc": { "en": "Veneers, bonding, and smile makeovers to help you put your best smile forward.", "am": "ቬኒርስ፣ ቦንዲንግ እና ፈገግታ ለውጦች በምርጥ ፈገግታዎ ለመቅረብ ይረዱዎታል።" },
   "service3_title": { "en": "Orthodontics", "am": "ኦርቶዶንቲክስ" },
   "service3_desc": { "en": "Traditional braces and clear aligners to straighten teeth and correct bite issues.", "am": "ጥርስን ለማስተካከል እና የንክሻ ችግሮችን ለማስተካከል ባህላዊ ቃና እና ግልጽ አሞቅቃዮች።" },
@@ -61,7 +61,7 @@
   "footer_address": { "en": "Addis Ababa, Ethiopia", "am": "አዲስ አበባ፣ ኢትዮጵያ" },
   "footer_maps_link": { "en": "View on Google Maps", "am": "በጉግል ካርታ ላይ ይመልከቱ" },
   "footer_disclaimer": { "en": "Built as a speculative sample by Possible Technology — not a commissioned or live website.", "am": "Built as a speculative sample by Possible Technology — not a commissioned or live website." },
-  "footer_rights": { "en": "© 2024 Don Dental Clinic. All rights reserved.", "am": "© 2024 ዶን ዯንታል ክሊኒክ። መብቱ በሕግ የተጠበቀ ነው።" },
+  "footer_rights": { "en": "© 2024 Don Dental Clinic. All rights reserved.", "am": "© 2024 ዶን ዴንታል ክሊኒክ። መብቱ በሕግ የተጠበቀ ነው።" },
 
   "error_banner": { "en": "Unable to load site content. Please refresh the page.", "am": "የጣቢያ ይዘት መጫን አልተቻለም። እባክዎ ገጹን ያድሱ።" }
 }

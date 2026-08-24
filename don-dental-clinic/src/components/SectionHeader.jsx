@@ -1,9 +1,9 @@
-function SectionHeader({ label, title, centered = true }) {
+function SectionHeader({ tag, title, subtitle, centered = true }) {
   return (
-    <div className="section-header text-center">
-      <span className="section-label">{label}</span>
-      <div className={`accent-line ${centered ? 'centered' : ''}`} />
+    <div className={`section-header ${centered ? 'text-center' : ''}`}>
+      {tag && <span className="section-tag">{tag}</span>}
       <h2 className="section-title">{title}</h2>
+      {subtitle && <p className="section-subtitle">{subtitle}</p>}
     </div>
   );
 }

@@ -159,7 +159,7 @@
         if (target) {
           e.preventDefault();
           const headerH = parseInt(
-            getComputedStyle(document.documentElement).getPropertyValue('--header-h') || '72'
+            getComputedStyle(document.documentElement).getPropertyValue('--header-h') || '76'
           );
           const top = target.getBoundingClientRect().top + window.scrollY - headerH - 16;
           window.scrollTo({ top, behavior: 'smooth' });
